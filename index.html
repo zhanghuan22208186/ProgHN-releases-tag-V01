@@ -1,38 +1,58 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon CV universitaire</title>
+</head>
+<body>
 
-    <body>
-<h1 align="center">Prénom Nom</h1>
-<h2 align="center">Licence 3 des Sciences du Langage</h2>
-<center><img src="./static/img/sorbonne-nouvelle-devise-trapezes.png" width="20%" /><img src="./static/img/photo.png" width="10%" /></center>
+  <header>
+    <img src="new_logo_site.jpg" alt="Logo de l'université" style="height: 80px;">
+    <h1>Mon CV universitaire</h1>
+  </header>
 
-<p>Mon CV des trois dernières années :</p>
-<table border="1px">
+  <p>Mon CV des trois dernières années :</p>
+  <table border="1">
     <thead>
-        <tr><th>année universitaire</th><th>Statut</th></tr>
+      <tr><th>année universitaire</th><th>Statut</th></tr>
     </thead>
     <tbody>
-        <tr><td>2022-2023</td><td>Cette année</td></tr>
-        <tr><td>2021-2022</td><td>L'année d'avant</td></tr>
-        <tr><td>2020-2021</td><td>L'année d'encore avant</td></tr>
+      <tr><td>2024-2025</td><td>M2</td></tr>
+      <tr><td>2023-2024</td><td>M1</td></tr>
+      <tr><td>2022-2023</td><td>M1</td></tr>
     </tbody>
-</table>
+  </table>
 
-<p>Voici les cinq derniers livres que j'ai lu :</p>
-<ol>
-    <li><i>Titre</i>, Qui, édition Quoi</li>
-    <li><i>Titre</i>, Qui, édition Quoi</li>
-    <li><i>Titre</i>, Qui, édition Quoi</li>
-    <li><i>Titre</i>, Qui, édition Quoi</li>
-    <li><i>Titre</i>, Qui, édition Quoi</li>
-</ol>
+  <p>Voici les cinq derniers livres que j'ai lus :</p>
+  <ol>
+    <li><em>Syntaxe générale, une introduction typologique</em>, Creissels, Denis. Paris: Hermes Science Publications</li>
+    <li><em>Transitivity, valency and voice</em>, Creissels, Denis. Oxford: Oxford University Press.</li>
+    <li><em>Grammatical Voice</em>, Zúñiga, Fernando & Kittilä, Seppo. Cambridge: Cambridge University Press</li>
+    <li><em>The Languages of Native North America</em>, Marianne Mithun. Cambridge: Cambridge University Press</li>
+    <li><em>The Emergence of Japanese Kingship</em>, Joan Piggott. Stanford University Press</li>
+  </ol>
 
-<footer>
-  <p><a href="http://www.univ-paris3.fr/">Lien vers le site de Sorbonne Nouvelle.</a></p>
-</footer>
-    </body>
+  <p>
+    <label for="nom">Comment vous appelez-vous ?</label>
+    <input type="text" id="nom" value="ZHANG">
+    <button onclick="direBonjour()">Bonjour...</button>
+  </p>
+
+  <p>
+    <button onclick="toggleAide()" id="btnAide">Cacher l’aide</button>
+  </p>
+
+  <div id="aide">
+    <p>Ici, on va afficher l’aide.</p>
+  </div>
+
+  <p>
+    <a href="https://www.sorbonne-nouvelle.fr/" target="_blank">
+      Visiter le site de la Sorbonne Nouvelle
+    </a>
+  </p>
+
+  <script src="fichier.js"></script>
+
+</body>
 </html>
